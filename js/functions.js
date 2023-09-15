@@ -183,24 +183,7 @@ async function getRepositorios() {
             descricao = '';
             for (i = 0; i < data.length; i++) {
 
-                if (data[i].description === null) {
-                    card = `<div class="card glass_morfism" style="width: 300px; height: 350px;margin-right:15px; margin-top:15px;">
-                        <div class="card-body">
-                        <h4 class="card-title text-center text-white">${data[i].name}</h4>
-                        <div class='col-auto'><p class="card-text text-start text-white lh-sm">Acesse o repositório para mais informações</p></div>
-                        
-                        </div>
-                        <div class='row centralizar'>
-                        <div class='col-auto'>
-                        <a href="${data[i].html_url}" target='_blank' class="btn_repositorio">Acessar Repositório</a>
-                        </div>
-                        </div><br>
-                    </div>`
-
-                    nome_repositorios += card;
-                    let container = document.querySelector('#projetos_github');
-                    container.innerHTML = nome_repositorios;
-                } else {
+                if (data[i].description != null) {
                     card = `<div class="card glass_morfism" style="width: 300px; height: 350px;margin-right:15px; margin-top:15px;">
                         <div class="card-body">
                         <h4 class="card-title text-center text-white">${data[i].name}</h4>
