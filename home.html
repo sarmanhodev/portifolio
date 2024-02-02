@@ -5,230 +5,379 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Diego Sarmanho - Full Stack Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
-    <!--JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./js/functions.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../portifolio/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
 
-
-        <div class="row">
-            <!--INÍCIO NAVBAR-->
-            <nav class=" navbar navbar-expand-lg bg-primary-subtle" id="navbar" data-bs-theme="dark">
-
-                <div class="m-1 p-1">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse m-2" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home" aria-current="page" href="#"><b>Home</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#perfilpessoal"><b>Perfil Pessoal</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills"><b>Skills</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#redes_sociais"><b>Redes Sociais</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projetos"><b>Projetos GitHub</b></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!--FIM NAVBAR-->
-
-            <!--INÍCIO AVATAR-->
-            <div class="text-center" style="background-image: url(./images/walpaper.jpg);">
-                <img class="logo" src="./images/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiências</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Principais Projetos</a>
+                    </li>
+                </ul>
             </div>
-            <!--FIM AVATAR-->
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top: 70px;">
+        <div class="row m-1">
+            <div class="col-md-8 text-start">
+                <div class="row" data-aos="zoom-out-right">
+                    <h1 class="text-white fw-bold titulo-principal">Diego Sarmanho</h1>
+                </div>
+
+                <div class="row" data-aos="zoom-out-right">
+                    <div class="col-auto">
+                        <h5 class="text-white fw-light sub_titulo">Desenvolvedor FullStack</h5>
+                    </div>
+
+                    <div class="col-auto">
+                        <a class="text-white link-underline-dark" target="_blank"
+                            href="https://www.linkedin.com/in/diego-sarmanho-b3aa52144/"
+                            style="display: inline-flex; cursor: pointer;">
+                            <i class="bi bi-linkedin text-white" id="linkedin" title="LinkedIn"
+                                style="display: inline-flex; cursor: pointer;"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-auto">
+                        <a class="text-white link-underline-dark" target="_blank" href="https://github.com/sarmanhodev"
+                            style="display: inline-flex; cursor: pointer;">
+                            <i class="bi bi-github text-white" id="github" title="GitHub"
+                                style="display: inline-flex; cursor: pointer;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-auto " data-aos="fade-down">
+                        <span class="badge" style="background-color: #34a0a4;">HTML</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-up">
+                        <span class="badge" style="background-color: #34a0a4;">CSS</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-down">
+                        <span class="badge" style="background-color: #34a0a4;">JavaScript</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-up">
+                        <span class="badge" style="background-color: #34a0a4;">JQuery</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-down">
+                        <span class="badge" style="background-color: #34a0a4;">Bootstrap</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-up">
+                        <span class="badge" style="background-color: #34a0a4;">Python</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-down">
+                        <span class="badge" style="background-color: #34a0a4;">Flask</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-up">
+                        <span class="badge" style="background-color: #34a0a4;">Pandas</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-down">
+                        <span class="badge" style="background-color: #34a0a4;">FastAPI</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-up">
+                        <span class="badge" style="background-color: #34a0a4;">SQLAlchemy</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-down">
+                        <span class="badge" style="background-color: #34a0a4;">Dart</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-up">
+                        <span class="badge" style="background-color: #34a0a4;">Rasa Software</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-down">
+                        <span class="badge" style="background-color: #34a0a4;">PostgreSQL</span>
+                    </div>
+                    <div class="col-auto" data-aos="fade-up">
+                        <span class="badge" style="background-color: #34a0a4;">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-1">
+
+            </div>
+        </div>
+        <div class="row m-1">
+            <div class="col-md-4" data-aos="fade-right">
+                <img class="img-fluid"
+                    src="../portifolio/images/_a0f0f28d-1568-4e29-989f-0a213981b0a2-removebg-preview.png" width="300">
+            </div>
+            <div class="col-md-8" data-aos="fade-left" id="sobre">
+                <p>
+                <h1 class="text-white fw-bold text-end text-decoration-underline">Sobre</h1>
+                </p>
+                <p class="text-white text-end">
+                    Ex-militar da Força Aérea Brasileira e desenvolvedor Full Stack com MBA em Engenharia de Software,
+                    pela Universidade Federal do Rio de
+                    Janeiro, com domínio em linguagem Python e frameworks para desenvolvimento de aplicações web,
+                    machine learning, análise de dados.
+
+                    Em <b>2018</b> iniciei minha jornada na área de tecnologia cursando <b>Tecnólogo em Análise e
+                        Desenvolvimento de Sistemas</b>.
+                    No período do curso, destacam-se projetos web como um <b>Portal do Aluno</b> e um projeto mobile,
+                    desenvolvido em <strong>Java</strong>,
+                    onde o intuito era criar um aplicativo onde o público alvo, infanto-juvenil, pudesse estudar
+                    matemática durante o período da pandemia de COVID-19.
+
+                    Findando o curso de Análise e Desenvolvimento de Sistemas, em <b>2021</b>, no mesmo ano, iniciei
+                    minha jornada, em busca de mais conhecimento,
+                    iniciando o curso de <b>MBA em Engenharia de Software, pela UFRJ</b>. Durante o período do curso,
+                    destacaram-se projetos como um <b>Sistema de Cadastro de Visitantes</b>, <b>API`s Rest</b> e
+                    uso de <b>Inteligência Aritificial</b> para o auxílio de clientes.
+
+                    Encerrando o MBA, consegui minha primeira experiência como <b>Desenvolvedor FullStack</b> em
+                    setembro de 2023,
+                    onde pude aplicar todo meu conhecimento técnico e teórico em inúmeras situações. Durante minha
+                    primeira experiência, destacam-se
+                    projetos como <b>gestão documental</b> e <b>Sistema CRM</b> para controle de débitos.</p>
+                <p class="text-white text-end">
+                    Autodidata e seguindo as boas práticas de desenvolvimento de
+                    software, fui capaz de aperfeiçoar minhas habilidades, sempre entregando um produto de excelente
+                    qualidade, obtendo sempre um feedback positivo. Minha abordagem centrada no usuário garante que as
+                    soluções desenvolvidas estejam alinhadas com as necessidades práticas, proporcionando uma transição
+                    suave para os novos fluxos de trabalho automatizados.
+                </p>
+                <p class="text-white text-end">
+                    <b>Meu foco principal é otimizar operações,
+                        aumentar a eficácia e garantir resultados precisos por meio de soluções tecnológicas
+                        inovadoras.</b>
+                </p>
+            </div>
+
+
         </div>
 
-        <div data-bs-spy="scroll" data-bs-target="#navbar">
-            <div class="row" style="background-color: #1F2E47;">
-                <div id="perfilpessoal" class="row">
-                    <h2 class="text-white m-2" style="text-shadow: 0px 2px 7px #000000;"><b>Quem sou eu?</b></h2>
-                </div>
+        <div class="row m-1">
+            <div class="col-md-8" id="experiencia" data-aos="fade-right">
+                <p>
+                <h1 class="text-white fw-bold text-start text-decoration-underline">Experiências</h1>
+                </p>
 
-                <div class="row" style="margin-bottom: 10px">
-                    <!--INÍCIO DESCRIÇÃO-->
-                    <div class="col-8 m-2">
-                        <p style="color: white;">
-                            Ex-militar da Força Aérea Brasileira e desenvolvedor Full Stack com MBA em Engenharia de
-                            Software, pela Universidade Federal do Rio de
-                            Janeiro, com amplo domínio em linguagem Python e
-                            frameworks para desenvolvimento de aplicações web, desktop, machine learning, API’s Rest e
-                            banco
-                            de dados.
+                <div class="row" id="linha1" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="col-md-3 text-start">
+                        <span class="text-white">2023 - Atualmente</span>
+                    </div>
 
-                            Entusiasta com conhecimentos em análise de dados, estatística, criação de automações e
-                            programação,
-                            buscando sempre me atualizar e aperfeiçoar os conhecimentos. Demonstrada capacidade de
-                            analisar
-                            e extrair insights significativos a partir de
-                            conjuntos de dados complexos e informações e apresentar de forma clara e concisa.
-
-                            Autodidata e seguindo as boas práticas de desenvolvimento de software, fui capaz de
-                            aperfeiçoar
-                            minhas habilidades, sempre entregando um produto de excelente qualidade, obtendo sempre um
-                            feedback positivo.
+                    <div class="col-md-6 text-start">
+                        <p class="text-white">
+                            <b>Desenvolvedor Fullstack (PJ):</b> Participando e desenvolvendo ativamente na
+                            identificação e
+                            criando soluções de automação de processos manuais, agilizando a execução de tarefas diárias
+                            e minimizando erros operacionais, resultando em uma maior eficiência operacional;
                         </p>
                     </div>
-                    <!--FIM DESCRIÇÃO-->
-                    <br>
-
-
-                    <!--FOTO PESSOAL-->
-                    <div class="col-auto m-2">
-                        <img src="./images/foto.jpeg" class="img-fluid img-thumbnail rounded mx-auto d-block"
-                            width="250" height="200" alt=""> <br>
-                        <!--REDES SOCIAIS-->
-                        <div id="redes_sociais" class="row centralizar">
-                            <div class="col-auto"><i class="bi bi-file-earmark-person text-white"></i>
-                                <a class="text-white link-underline-dark" target="_blank"
-                                    href="../portifolio/images/Curriculo Vitae Diego de Freitas Dias Sarmanho Lopes.pdf"
-                                    style="display: inline-flex; cursor: pointer;">CURRÍCULO</a>
-                            </div>
-
-                            <div class="col-auto"><i class="bi bi-linkedin text-white"
-                                    style="display: inline-flex; cursor: pointer;"></i>
-                                <a class="text-white link-underline-dark" target="_blank"
-                                    href="https://www.linkedin.com/in/diego-sarmanho-b3aa52144/"
-                                    style="display: inline-flex; cursor: pointer;">LINKEDIN</a>
-                            </div>
-
-                            <div class="col-auto"><i class="bi bi-github text-white"
-                                    style="display: inline-flex; cursor: pointer;"></i>
-                                <a class="text-white link-underline-dark" target="_blank"
-                                    href="https://github.com/sarmanhodev"
-                                    style="display: inline-flex; cursor: pointer;">GITHUB</a>
-                            </div>
-                        </div>
-                        <!--FIM REDES SOCIAIS-->
-                    </div>
-                    <!--FIM FOTO PESSOAL-->
                 </div>
-                <br>
 
-            </div>
-            <!--FIM APRESENTAÇÃO PESSOAL-->
-
-            <!--INÍCIO SKILLS-->
-            <div class="row" style="background-color:#28556F ;">
-                <h2 id="skills" class="text-center text-white" style="text-shadow: 0px 2px 7px #000000;"><b>Skills</b>
-                </h2>
-
-                <div class="row centralizar" style="margin-bottom: 10px">
-                    <div class="col-auto">
-                        <div>
-                            <div class="row centralizar">
-                                <div id="div_html" class="col-auto">
-                                    <h6 class="text-center text-white"><b>HTML</b></h6>
-                                    <img src="./images/html.png" style="cursor: pointer;" class="img-fluid shake-slow"
-                                        id="html" alt="" width="100" height="100">
-                                </div>
-                                <div id="div_css" class="col-auto">
-                                    <h6 class="text-center text-white"><b>CSS</b></h6>
-                                    <img src="./images/css.png" style="cursor: pointer;" class="img-fluid shake-slow"
-                                        id="css" alt="" width="100" height="100">
-                                </div>
-                                <div id="div_javascript" class="col-auto">
-                                    <h6 class="text-center text-white"><b>JAVASCRIPT</b></h6>
-                                    <img src="./images/js.png" style="cursor: pointer;" id="javascript"
-                                        class="img-fluid shake-slow" alt="" width="100" height="100">
-                                </div>
-                                <div id="div_bootstrap" class="col-auto">
-                                    <h6 class="text-center text-white"><b>BOOTSTRAP</b></h6>
-                                    <img src="./images/bootstrap.png" style="cursor: pointer;" id="bootstrap"
-                                        class="img-fluid shake-slow" alt="" width="110" height="100">
-                                </div>
-                            </div>
-                        </div>
+                <div class="row" id="linha2" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="col-md-3 text-start">
+                        <span class="text-white">2017 - 2023</span>
                     </div>
 
-                    <div class="col-auto">
-                        <div>
-                            <div class="row centralizar">
-                                <div id="div_python" class="col-auto">
-                                    <h6 class="text-center text-white"><b>PYTHON</b></h6>
-                                    <img src="./images/python.png" style="cursor: pointer;" id="python"
-                                        class="img-fluid shake-slow" alt="" width="100" height="100">
-                                </div>
-                                <div id="div_flask" class="col-auto">
-                                    <h6 class="text-center text-white"><b>FLASK</b></h6>
-                                    <img id="flask" src="./images/flask.png" style="cursor: pointer;"
-                                        class="img-fluid shake-slow" alt="" width="90" height="100">
-                                </div>
-                                <div id="div_flutter" class="col-auto">
-                                    <h6 class="text-center text-white"><b>FLUTTER</b></h6>
-                                    <img id="flutter" src="./images/flutter.png" style="cursor: pointer;"
-                                        class="img-fluid shake-slow" alt="" width="90" height="100">
-                                </div>
-                                <div id="div_rasa" class="col-auto">
-                                    <h6 class="text-center text-white"><b>RASA SOFTWARE</b></h6>
-                                    <img id="rasa" src="./images/rasa.png" style="cursor: pointer;"
-                                        class="img-fluid shake-slow" alt="" width="190" height="100">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-6 text-start">
+                        <p class="text-white">
+                            <b>Conselho Regional de Medicina do Estado do Rio de Janeiro (CREMERJ) -Assistente
+                                Administrativo:</b> Controle de fluxo do setor, controle de entrada e saída de
+                            documentos. Atendimento ao público presencial ou por e-mail. Automatizando o fluxo de
+                            tramitação de documentos, bem como domínio de todo sistema interno;
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" id="linha3" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="col-md-3 text-start">
+                        <span class="text-white">2009 - 2017</span>
                     </div>
 
-                    <div class="col-auto">
-                        <div>
-                            <div class="row centralizar">
-                                <div id="div_postgre" class="col-auto">
-                                    <h6 class="text-center text-white">POSTGRESQL</h6>
-                                    <img id="postgre" src="./images/postgre.png" style="cursor: pointer;"
-                                        class="img-fluid shake-slow" alt="" width="100" height="100">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-6 text-start">
+                        <p class="text-white">
+                            <b>Força Aérea Brasileira - Militar Temporário</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-auto"><i class="bi bi-file-earmark-person text-white"></i>
+                        <a class="text-white link-underline-dark fs-6 fw-bold" target="_blank"
+                            href="../portifolio/images/Curriculo Vitae Diego de Freitas Dias Sarmanho Lopes.pdf"
+                            style="display: inline-flex; cursor: pointer;">Acesso ao Currículo completo <i
+                                class="bi bi-arrow-up-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--FINAL SKILLS-->
 
-        <!--INÍCIO REPOSITÓRIOS GITHUB-->
-        <div class="row centralizar" id="projetos" style="background-color: #367F92;">
-            <h2 class="text-white text-center" style="text-shadow: 0px 2px 7px #000000;">Projetos GitHub</h2>
+        <div class="row m-1">
+            <div class="col-md-12" id="projetos" data-aos="fade-up" data-aos-duration="4000">
+                <h1 class="text-white fw-bold text-center text-decoration-underline">Principais Projetos</h1>
 
-            <div id="projetos_github" class="row centralizar" style="margin-bottom: 10px">
-                <div class="row centralizar">
-                    <h2 class="text-white">Projetos no GitHub</h2>
+                <div class="row" style="margin-top: 50px;" data-aos="fade-left" data-aos-duration="4000">
+                    <div class="col-md-4">
+                        <video autoplay controls width="320" height="240"
+                            class="img-fluid img-thumbnail mx-auto d-block">
+                            <source src="../portifolio/video/crm novo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="text-white text-start fw-bold text-decoration-underline">Sistema CRM <a
+                                target="_blank" href="https://github.com/sarmanhodev/sistema_crm_cobranca">
+                                <i class="bi bi-link-45deg text-decoration-none text-white"
+                                    title="Link para o repositório"></i>
+                            </a></h5>
+                        <h6 class="text-white text-star">
+                            <b>Sistema CRM</b> para levantamento de débitos de clientes. O sistema fará o controle de
+                            débitos,
+                            quantidade de débitos, quantidade de pagamentos efetuados. Além de todo o controle, o
+                            usuário poderá gerar relatórios, anuais ou mensais, e comunicados via <b>WhatsApp</b>
+                        </h6>
+                        <span class="badge" style="background-color: #34a0a4;">HTML</span>
+                        <span class="badge" style="background-color: #34a0a4;">Bootstrap</span>
+                        <span class="badge" style="background-color: #34a0a4;">JavaScript</span>
+                        <span class="badge" style="background-color: #34a0a4;">Python</span>
+                        <span class="badge" style="background-color: #34a0a4;">Flask</span>
+                        <span class="badge" style="background-color: #34a0a4;">SQLAlchemy</span>
+                        <span class="badge" style="background-color: #34a0a4;">PostgreSQL</span>
+                        <span class="badge" style="background-color: #34a0a4;">Docker</span>
+                    </div>
                 </div>
-                <!--RECEBERÁ O RESULTADO DA FUNÇÃO GET-->
+
+                <div class="row" style="margin-top: 50px;" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="col-md-4">
+                        <video autoplay controls width="320" height="240"
+                            class="img-fluid img-thumbnail mx-auto d-block">
+                            <source src="../portifolio/video/gestao_documental.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="text-white text-start fw-bold text-decoration-underline">Sistema de Gestão
+                            Documental <a target="_blank" href="https://github.com/sarmanhodev/gestao_documental">
+                                <i class="bi bi-link-45deg text-decoration-none text-white"
+                                    title="Link para o repositório"></i>
+                            </a></h5>
+                        <h6 class="text-white text-start">
+                            <b>Sistema de Gestão Documental</b> onde o usuário poderá realizar o controle de
+                            solicitações recebidas, documentos enviados e documentos aguardando envio. O sistema gera
+                            relatórios detalhados de toda movimentação dos documentos, desde a entrada, até sua
+                            expedição.
+                        </h6>
+                        <span class="badge" style="background-color: #34a0a4;">HTML</span>
+                        <span class="badge" style="background-color: #34a0a4;">Bootstrap</span>
+                        <span class="badge" style="background-color: #34a0a4;">JavaScript</span>
+                        <span class="badge" style="background-color: #34a0a4;">Python</span>
+                        <span class="badge" style="background-color: #34a0a4;">Flask</span>
+                        <span class="badge" style="background-color: #34a0a4;">SQLAlchemy</span>
+                        <span class="badge" style="background-color: #34a0a4;">PostgreSQL</span>
+                        <span class="badge" style="background-color: #34a0a4;">Docker</span>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 50px;" data-aos="fade-left" data-aos-duration="4000">
+                    <div class="col-md-4">
+                        <video autoplay controls width="320" height="240"
+                            class="img-fluid img-thumbnail mx-auto d-block">
+                            <source src="../portifolio/video/formulario.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="text-white text-start fw-bold text-decoration-underline">Sistema de Formulários
+                            Digitais <a target="_blank" href="https://github.com/sarmanhodev/formularios_digitais">
+                                <i class="bi bi-link-45deg text-decoration-none text-white"
+                                    title="Link para o repositório"></i>
+                            </a></h5>
+
+                        <h6 class="text-white text-start">
+                            <b>Sistema de Formulários Digitais</b> onde o usuário poderá, após preencher os campos
+                            solicitados, gerar um formulário e, ainda, imprimi-lo ou gerar arquivo PDF do mesmo.
+                        </h6>
+                        <span class="badge" style="background-color: #34a0a4;">HTML</span>
+                        <span class="badge" style="background-color: #34a0a4;">Bootstrap</span>
+                        <span class="badge" style="background-color: #34a0a4;">JavaScript</span>
+                        <span class="badge" style="background-color: #34a0a4;">Python</span>
+                        <span class="badge" style="background-color: #34a0a4;">Flask</span>
+                        <span class="badge" style="background-color: #34a0a4;">Docker</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--FINAL REPOSITÓRIOS GITHUB-->
-
         <!--INÍCIO RODAPÉ-->
-        <div class="row">
+        <div class="row" style="margin-top: 40px;">
             <footer>
                 <p>
-                    Portifólio criado por <a href="#home">Diego Sarmanho</a> - 2023
+                    Portifólio criado por <a href="#home">Diego Sarmanho</a> - 2024
                 </p>
             </footer>
         </div>
         <!--FIM RODAPÉ-->
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
+<script>
+    AOS.init();
+</script>
+
+<style>
+    .titulo-principal:after,
+    .sub_titulo:after {
+        content: '|';
+        margin-left: 5px;
+        opacity: 1;
+        animation: pisca .7s infinite;
+    }
+
+    /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+    @keyframes pisca {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    function typeWrite(elemento) {
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = ' ';
+        textoArray.forEach(function (letra, i) {
+
+            setTimeout(function () {
+                elemento.innerHTML += letra;
+            }, 75 * i)
+
+        });
+    }
+    const titulo = document.querySelector('.titulo-principal');
+    const sub_titulo = document.querySelector('.sub_titulo');
+    typeWrite(titulo);
+    typeWrite(sub_titulo);
+</script>
 
 </html>
